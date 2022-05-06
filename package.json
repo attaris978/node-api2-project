@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@vscode/sqlite3": "5.0.7",
+    "express": "^4.18.1",
     "knex": "^1.0.3"
   },
   "devDependencies": {
