@@ -60,7 +60,7 @@ router.route('/:id')
             update(req.params.id, {title, contents})
             .then( confirm => res.status(confirm ? 200 : 404).json(confirm ? {id: +req.params.id, title, contents} : {message: "The post with the specified ID does not exist"}))
             .catch(() => res.status(500).json({message: "The post information could not by modified"}))
-        }
+        } 
     })
 
     router.route('/:id/comments')
